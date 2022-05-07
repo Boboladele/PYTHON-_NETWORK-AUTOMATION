@@ -2,7 +2,7 @@ import getpass
 import telnetlib
 
 HOST = "localhost"
-user = input("Enter your remote account: ")
+user = input("Username: ")
 password = getpass.getpass()
 
 tn = telnetlib.Telnet(HOST)
