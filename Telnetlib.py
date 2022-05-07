@@ -13,7 +13,7 @@ if password:
     tn.read_until(b"Password: ")
     tn.write(password.encode('ascii') + b"\n")
 
-tn.write(b"ls\n")
+tn.write(b"config t\n")
 tn.write(b"exit\n")
 
 print(tn.read_all().decode('ascii'))
